@@ -37,9 +37,7 @@ Install the project dependencies:
 
 ```shell
 npm i
-
-// or:
-
+# or:
 yarn
 ```
 
