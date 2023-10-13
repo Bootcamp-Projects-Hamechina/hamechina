@@ -27,7 +27,7 @@ Fork the project [on GitHub](https://github.com/Bootcamp-Projects-Hamechina/hame
 Clone your fork locally. Do not clone the original repository unless you plan to become a long-term contributor and have been given permission to do so.
 
 ```shell
-git clone https://github.com/Bootcamp-Projects-Hamechina/hamechina
+git clone https://github.com/[your-github-user]/hamechina
 cd hamechina
 ```
 
