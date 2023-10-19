@@ -17,7 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <AuthProvider>
+        {/* TODO: Add navbar */}
+        {/* <Navbar /> */} 
+        <main className="flex justify-center items-start p-6 min-h-screen">
+          {children}
+        </main>
+      </AuthProvider>  
+      </body>
     </html>
   )
 }
