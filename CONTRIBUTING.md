@@ -49,6 +49,25 @@ Create and check out your feature branch:
 git checkout -b my-new-feature
 ```
 
+### Getting Started
+
+- Go to .env.example and copy the file.
+- Create .env.lacal file and paste.
+- In bash/Linux terminal, create your secret: `` openssl rand -hex 32` or go to https://generate-secret.now.sh/32 ``
+
+#### To get your GITHUB_ID & GITHUB_SECRET:
+
+- Go to: https://github.com/settings/apps
+- Click on "New GitHub App"
+  ![Alt text](image.png)
+- You can follow this tutorial on how to add an app on github, minute 12:40: https://www.youtube.com/watch?v=w2h54xz6Ndw&list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj&index=19
+- Get your GITHUB_ID & GITHUB_SECRET, copy&paste to your .env.local
+- Resources: https://next-auth.js.org/providers/github
+
+#### Or (How to get your GITHUB_ID & GITHUB_SECRET):
+
+Talk to me, I'll give you mine :happy
+
 ### Make changes locally
 
 ### Commit your changes
