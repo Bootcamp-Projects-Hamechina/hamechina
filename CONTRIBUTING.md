@@ -66,7 +66,11 @@ git checkout -b my-new-feature
 - Get your GITHUB_ID & GITHUB_SECRET, copy&paste to your .env.local
 - Resources: https://next-auth.js.org/providers/github
 
-#### Or (How to get your GITHUB_ID & GITHUB_SECRET):
+#### To get your GOOGLE_CLIENT_ID & GOOGLE_CLIENT_SECRET:
+
+- https://next-auth.js.org/providers/google
+
+### Or (How to get your GITHUB_ID & GITHUB_SECRET / GOOGLE_CLIENT_ID & GOOGLE_CLIENT_SECRET):
 
 Talk to me, I'll give you mine :happy
 
