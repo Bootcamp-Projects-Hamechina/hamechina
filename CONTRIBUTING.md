@@ -18,6 +18,14 @@ To get an overview of the project, read the [README](README.md). Here are some r
 
 ## Getting started
 
+### Find an issue you would like to take
+
+- [issues] (https://github.com/Bootcamp-Projects-Hamechina/hamechina/issues)
+
+### Write a comment in the issue
+
+Saying you would like to the take the issue. Ask if you have any questions. Get assigned to the issue.
+
 ### Fork the repository
 
 Fork the project [on GitHub](https://github.com/Bootcamp-Projects-Hamechina/hamechina)
