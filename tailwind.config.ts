@@ -42,8 +42,6 @@ module.exports = {
         // dark mode background & text
         darkBg: colors.zinc[500],
         lightText: colors.stone[50],
-        
-
       },
     },
     fontFamily: {
