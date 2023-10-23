@@ -1,6 +1,9 @@
-import type { Config } from 'tailwindcss'
+/** @type {import('tailwindcss').Config} */
 
-const config: Config = {
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,30 +11,54 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-      },
-      colors: {
-        'primary-black': '#1A232E',
-        'secondary-white': '#c7c7c7',
+      keyframes: {
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
       },
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
-        'wiggle': 'wiggle 1s ease-in-out infinite',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        }
-      }
+      colors: {
+        gary: colors.gray,
+        orange: colors.orange,
+        cyan: colors.cyan,
+        slate: colors.slate,
+        pink: colors.pink,
+        green: colors.teal,
+        purple: colors.indigo,
+        blue: colors.blue,
+
+        // light mode background & text
+        lightBg: colors.stone[50],
+        darkText: colors.slate[950],
+
+        // dark mode background & text
+        darkBg: colors.zinc[500],
+        lightText: colors.stone[50],
+      },
+    },
+    fontFamily: {
+      inter: ['Inter', 'sans-serif'],
+    },
+    fontSize: {
+      xs: '12px',
+      sm: '14px',
+      base: '16px',
+      lg: '18px',
+      xl: '20px',
+      '2xl': '24px',
+      '3xl': '34px',
+      '4xl': '48px',
+      '5xl': '60px',
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require('tailwindcss-animate')],
+  safelist: ['bg-gradient-to-r'],
+};
