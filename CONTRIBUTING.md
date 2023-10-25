@@ -10,6 +10,7 @@ In this guide you will get an overview of the contribution workflow from opening
 
 To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:
 
+- [Beginner's tutorial / Hebrew](https://www.youtube.com/watch?v=IVNxfbHNHZk)
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 
