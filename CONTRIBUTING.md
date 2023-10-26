@@ -93,6 +93,12 @@ Commit your changes:
 git commit -m 'Add some feature'
 ```
 
+### Sync to Remote Before PR
+
+```shell
+git pull origin my-new-feature
+```
+
 ### Push your changes
 
 Push your changes to your fork:
