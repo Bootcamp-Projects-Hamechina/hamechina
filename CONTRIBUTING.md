@@ -93,9 +93,19 @@ git commit -m 'Add some feature'
 
 ### Sync to Remote Before PR
 
+If you see that your forked repo on github is behind some commits, you may want to get it up to date to avoid conflicts.
+
+- Sync your forked repo on GitHub
+  ![Sync your forked repo on GitHub](image-1.png)
+
+- Update you local main - git.
+- Update you local branch - git:
+
 ```shell
 git pull origin my-new-feature
 ```
+
+- This will pull and sync your local branch to your updated GitHub repo and original repo.
 
 ### Push your changes
 
@@ -110,6 +120,21 @@ git push -u origin my-new-feature
 When you're finished with the changes, create a pull request, also known as a PR.
 
 <!-- - Fill the "Ready for review" template so that we can review your PR. This template helps reviewers understand your changes as well as the purpose of your pull request. ?? check this..-->
+
+### Rebase Git Branch
+
+Sometines, when you made a PR, and there are some changes needed before it could be merged, syncing your local git may not work.
+Then, you might want to rebase your local branch onto the remote.
+There are different ways to achive that, here is one that worked for me:
+
+```shell
+# fetch the latest changes from a remote git repository:
+git fetch
+
+# Integrating changes:
+git rebase origin/main
+
+```
 
 ### Issues
 
