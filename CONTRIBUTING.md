@@ -87,8 +87,6 @@ Talk to me, I'll give you mine :happy
 
 ### Commit your changes
 
-Commit your changes:
-
 ```shell
 git commit -m 'Add some feature'
 ```
