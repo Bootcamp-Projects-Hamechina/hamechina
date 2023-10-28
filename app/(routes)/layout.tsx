@@ -25,7 +25,7 @@ export default function RootLayout({
 				<AuthProvider>
 					{/* TODO: Add navbar */}
 					<Navbar />
-					<main className="flex flex-col flex-1 h-full pt-6 px-5 md:px-40 bg-lightBg text-darkText">
+					<main className="flex flex-col flex-1 h-full pt-6  bg-lightBg text-darkText">
 						{children}
 					</main>
 					<Footer />

@@ -35,7 +35,7 @@ const faqs = [
 
 const FAQSection = () => {
 	return (
-		<div className="w-full pb-12 md:pb-24  ">
+		<div className="w-full pb-12 md:pb-24 px-5 md:px-40">
 			<Faqs faqs={faqs} />
 		</div>
 	);
