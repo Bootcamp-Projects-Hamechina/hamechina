@@ -18,7 +18,7 @@ const Faqs = ({ faqs }: FaqsProps) => {
 		<>
 			<SectionTitle title="שאלות נפוצות" />
 
-			<p className="w-full py-2 text-right text-base md:text-lg break-words">
+			<p className="w-full py-2 text-right text-base md:text-xl break-words">
 				לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום
 				סילקוף, מרגשי ומרגשח. עמחליף גולר
 			</p>
