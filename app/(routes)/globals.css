@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* START: General styles */
@@ -22,6 +22,24 @@
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+  @apply flex flex-row justify-center items-center px-4 py-2 outline-none text-xl text-center font-normal whitespace-nowrap rounded-lg w-full md:w-fit cursor-pointer;
+
+}
+
+/* Button variants */
+.orange-btn{
+  @apply bg-orange-200 hover:bg-orange-300 text-gray-800
+}
+
+.gray-btn{
+  @apply bg-gray-700 hover:bg-gray-800 text-lightText
+}
+
+.slate-btn{
+  @apply bg-slate-300 hover:bg-slate-400 text-cyan-900
+}
+
+.cyan-btn{
+  @apply bg-cyan-900 hover:bg-cyan-950 text-slate-300
 }
 /* END: General styles */

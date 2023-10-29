@@ -1,8 +1,6 @@
-import Link from "next/link";
 import React from "react";
 import SectionTitle from "@/app/_shared-components/SectionTitle";
-
-// type Props = {}
+import ButtonLink from "@/app/_shared-components/ButtonLink";
 
 const featuredContent = [
 	{
@@ -66,12 +64,13 @@ const DiscordSection = () => {
 					לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד
 					אדנדום סילקוף, מרגשי ומרגשח. עמחליף גולר
 				</p>
-				<Link
+				<ButtonLink
 					href="https://discord.gg/zxuKGU8P9R"
-					className="bg-gray-700 text-lightText hover:bg-gray-800 text-xl text-center font-normal rounded-md px-4 py-2 whitespace-nowrap"
+					external
+					className="gray-btn"
 				>
 					הצטרפו לדיסקורד
-				</Link>
+				</ButtonLink>
 			</div>
 			<div className="md:gap-5 grid grid-cols-1 md:grid-cols-2">
 				{featuredContent.map((content) => (

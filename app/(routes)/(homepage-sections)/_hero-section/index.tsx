@@ -1,8 +1,7 @@
 import React from "react";
+import ButtonLink from "@/app/_shared-components/ButtonLink";
 
-type Props = {};
-
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
 	return (
 		<div className="w-full px-5 md:px-40 pb-12 pt-6 md:pt-16 flex flex-col items-center md:items-start gap-6 bg-gray-700 text-lightText">
 			<h1 className="font-normal text-4xl text-center md:text-5xl md:text-start leading-tight">
@@ -12,9 +11,9 @@ const HeroSection = (props: Props) => {
 				לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום
 				סילקוף, מרגשי ומרגשח. עמחליף גולר
 			</p>
-			<button className="bg-orange-200 text-gray-700 hover:bg-orange-300 text-xl text-center font-semibold px-4 py-2 rounded-md w-full md:w-fit">
+			<ButtonLink href="/" className="orange-btn">
 				התחברות / הרשמה
-			</button>
+			</ButtonLink>
 		</div>
 	);
 };
