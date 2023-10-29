@@ -44,7 +44,7 @@ const DiscordSection = () => {
           לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום
           סילקוף, מרגשי ומרגשח. עמחליף גולר
         </div>
-        <Link href="https://discord.gg/zxuKGU8P9R" className="bg-gray-700 text-lightText hover:bg-darkBg text-xl text-center font-semibold rounded-md px-3 whitespace-nowrap">
+        <Link href="https://discord.gg/zxuKGU8P9R" className="bg-gray-700 text-lightText hover:bg-darkBg text-xl text-center font-semibold rounded-md px-4 py-2 whitespace-nowrap">
           הצטרפו לדיסקורד
         </Link>
       </div>
