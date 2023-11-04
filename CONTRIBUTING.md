@@ -69,7 +69,7 @@ git checkout -b my-new-feature
 - Go to: https://github.com/settings/apps
 - Click on "New GitHub App"
 
-  ![Alt text](@/public/image.png)
+  ![Alt text](/public/image.png)
 
 - You can follow this tutorial on how to add an app on github, minute 12:40: https://www.youtube.com/watch?v=w2h54xz6Ndw&list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj&index=19
 - Get your GITHUB_ID & GITHUB_SECRET, copy&paste to your .env.local
