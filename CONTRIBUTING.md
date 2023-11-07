@@ -19,7 +19,7 @@ To get an overview of the project, read the [README](README.md). Here are some r
 
 ## Getting started
 
-> **Warning**
+> **Important**
 > we are running the project with next.js versuin 14. The system requirements for that is Node.js 18.17 or later.
 
 > You can update your system to the LTS version here: [Node.js Download](https://nodejs.org/en/download)
