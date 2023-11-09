@@ -26,7 +26,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-      <ul className="hidden space-x-2 md:h-auto md:flex gap-8">
+      <ul className="space-x-2 md:h-auto md:flex gap-8">
       {links.map((link) => {
           const LinkIcon = link.icon;
           return (
@@ -34,14 +34,15 @@ export default function NavLinks() {
               key={link.name}
               href={link.href}
               className={clsx(
-                  'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+                  'flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:text-[#164E63] md:flex-none md:justify-start md:p-2 md:px-3',
                   {
-                      'bg-sky-100 text-blue-600': pathname === link.href,
-                    },
+                    'text-[#F3A549]': pathname === link.href,
+                  },
                     )}
                     >
             <LinkIcon className="w-6" />
-            <p className="hidden md:block">{link.name}</p>
+            <p className="md:block">{link.name}</p>
+            {/* <p className="hidden md:block">{link.name}</p> */}
           </Link>
         );
     })}
