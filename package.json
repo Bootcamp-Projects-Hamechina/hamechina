@@ -13,7 +13,6 @@
     "@heroicons/react": "^2.0.18",
     "@radix-ui/react-accordion": "^1.1.2",
     "classnames": "^2.3.2",
-    "clsx": "^2.0.0",
     "heroicons": "^2.0.18",
     "lucide-react": "^0.288.0",
     "mongodb": "^6.2.0",

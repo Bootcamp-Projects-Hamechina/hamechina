@@ -5,7 +5,6 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession, signIn, signOut } from "next-auth/react"
@@ -33,12 +32,7 @@ export default function NavLinks() {
               <Link
               key={link.name}
               href={link.href}
-              className={clsx(
-                  'flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:text-[#164E63] md:flex-none md:justify-start md:p-2 md:px-3',
-                  {
-                    'text-[#F3A549]': pathname === link.href,
-                  },
-                    )}
+              className={`flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:text-[#164E63] md:flex-none md:justify-start md:p-2 md:px-3 ${pathname === link.href ? 'text-[#F3A549]' : ''}`}
                     >
             <LinkIcon className="w-6" />
             <p className="md:block">{link.name}</p>
