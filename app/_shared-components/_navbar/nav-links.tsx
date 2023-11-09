@@ -6,7 +6,7 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useSession, signIn, signOut } from "next-auth/react"
+// import { useSession, signIn, signOut } from "next-auth/react"
 
 
 // Map of links to display in the side navigation.
@@ -42,5 +42,3 @@ export default function NavLinks() {
     </ul>
   );
 }
-
-export {signOut}
