@@ -8,8 +8,8 @@ export default function Home() {
 	return (
 		<main className="overflow-hidden">
 			<HeroSection />
-			<DiscordSection />
 			<HamechinaContentSection />
+			<DiscordSection />
 			<FAQSection />
 		</main>
 	);

@@ -22,7 +22,7 @@
 }
 
 .custom-btn {
-  @apply flex flex-row justify-center items-center px-4 py-2 outline-none text-xl text-center font-normal whitespace-nowrap rounded-lg w-full md:w-fit cursor-pointer;
+  @apply items-center px-4 py-2 outline-none text-xl text-center font-normal whitespace-nowrap rounded-lg w-full md:w-fit cursor-pointer;
 
 }
 
