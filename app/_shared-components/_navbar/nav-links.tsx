@@ -1,7 +1,7 @@
 'use client'
 
 import {
-  UserGroupIcon,
+  // UserGroupIcon,
   HomeIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -13,11 +13,12 @@ import { usePathname } from 'next/navigation';
 // Depending on the size of the application, this would be stored in a database.
 const links = [
     { name: 'Home', href: '/', icon: HomeIcon },
-    {
-        name: 'Community',
-        href: '/error',
-        icon: UserGroupIcon,
-    },
+    // Here we add other routes:
+    // {
+    //     name: 'Community',
+    //     href: '/',
+    //     icon: UserGroupIcon,
+    // },
 ];
 
 export default function NavLinks() {
