@@ -13,7 +13,7 @@ This is an open source webside associated with Baot and Hofhot community members
 
 > It uses new technologies (server actions) which are subject to change and may break your application.
 
-## Tech Stack
+## Tech Stack:
 
 - **Front-end:** [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com)
