@@ -27,9 +27,6 @@ const Navbar = (props: Props) => {
           <div className="hidden md:block">Sign Out</div>
           </button>
         </form>
-        <button className="flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:text-[#164E63] md:flex-none md:justify-start md:p-2 md:px-3">
-          <div className="hidden md:block">Sign Out</div>
-        </button>
       </div>
     </nav>
   )
