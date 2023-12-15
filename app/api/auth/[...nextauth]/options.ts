@@ -2,9 +2,6 @@ import type { NextAuthOptions } from 'next-auth'
 import GitHubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { connectDB } from '@/lib/connectDB'
-import prisma from '@/prisma'
-import bcrypt from "bcrypt"
 
 export const options: NextAuthOptions = {
     providers: [
@@ -19,10 +16,10 @@ export const options: NextAuthOptions = {
         CredentialsProvider({
             name: "Credentials",
             credentials: {
-                email: {
-                    label: "Email:",
+                username: {
+                    label: "Username:",
                     type: "text",
-                    placeholder: "your-email"
+                    placeholder: "your-username"
                 },
                 password: {
                     label: "Password:",
@@ -31,31 +28,19 @@ export const options: NextAuthOptions = {
                 }
             },
             async authorize(credentials) {
+                // TODO - Add issue: This is where you need to retrieve user data 
+                // to verify with credentials
                 // Docs: https://next-auth.js.org/configuration/providers/credentials
-                if (!credentials || !credentials.email || !credentials.password) return null
-                try {
-                    await connectDB()
-                    const user = await prisma.user.findFirst({where: { email: credentials.email}})
-                  
-                    if (!user?.hashPassword) return null
+                const user = { id: "42", name: "amabelle", password: "hamechina" }
 
-                    const isPasswordCorrect = await bcrypt.compare(credentials.password, user.hashPassword)
-                    if (isPasswordCorrect) {
-                        return user
-                    } else {
-                        return null
-                    }
-                } catch (error) {
-                    console.log("🚀 ~ file: options.ts:44 ~ authorize ~ error:", error)
+                if (credentials?.username === user.name && credentials?.password === user.password) {
+                    return user
+                } else {
                     return null
-                } finally {
-                    await prisma.$disconnect
                 }
-               
             }
         })
     ],
-    secret: process.env.NEXTAUTH_SECRET,
     // Here we can add our own costume pages:
     // pages: {
     //     signIn: "/signIn",
