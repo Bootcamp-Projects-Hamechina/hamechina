@@ -63,6 +63,7 @@ export const options: NextAuthOptions = {
         })
     ],
     secret: process.env.NEXTAUTH_SECRET,
+    // aaaaaaaaaaaaaaaaaaa
     // Here we can add our own costume pages:
     // pages: {
     //     signIn: "/signIn",
