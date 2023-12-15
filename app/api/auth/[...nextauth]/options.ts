@@ -49,7 +49,7 @@ export const options: NextAuthOptions = {
                     console.log("🚀 ~ file: options.ts:44 ~ authorize ~ error:", error)
                     return null
                 } finally {
-                    await prisma.$disconnect
+                    prisma.$disconnect
                 }
                
             }
