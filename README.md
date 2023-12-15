@@ -23,7 +23,7 @@ This is an open source webside associated with Baot and Hofhot community members
 - **Database:** [MongoDB](https://www.mongodb.com/)
 - **Storage:** [Cloudinary](https://cloudinary.com/)
 
-## Features to be implemented
+## Features to be implemented:
 
 - [x] Authentication **NextAuth.js**
 - [x] Database on **MongoDB**
