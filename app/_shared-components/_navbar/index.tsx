@@ -1,9 +1,17 @@
 import NavLinks from './nav-links';
 import { redirect } from 'next/navigation'
+// import { signOut } from 'next-auth/react';
 
 type Props = {}
 
 const Navbar = (props: Props) => {
+  
+
+  //TODO:
+  // const logOut = async () => {
+  //   await signOut()
+  // }
+
   return (
     <nav className='flex h-full px-3 py-2 md:px-2 text-gray-900'>
       <div className="flex grow flex-row justify-between space-x-2 items-center">
@@ -12,7 +20,6 @@ const Navbar = (props: Props) => {
         <form
           action={async () => {
             'use server';
-            // await signOut(); // TODO..
             redirect('/api/auth/signout')
           }}
         >
